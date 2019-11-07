@@ -8,6 +8,21 @@
 // --- IMPORTS
 @import url('https://fonts.googleapis.com/css?family=McLaren|Poppins|Raleway&display=swap');
 
+// --- VARIABLES
+
+@font-large: 5rem;
+@font-medium: 2.5rem;
+@font-small: 1.5rem;
+@bottom: 5%;
+@align-start: start;
+@align-center: center;
+
+//colors
+@pink: #dfcdc3;
+@green: #719192;
+@gray: #5f6769;
+@dark-gray: #3c4245;
+@black: black;
 
 
 
@@ -64,17 +79,11 @@ html, body {
 	height: 100%; 
 	padding: 3%;
 	font-size:62.5%;
-	font-family: 'Poppins', sans-serif;
-
+	font-family: 'Poppins', sans-serif;	
+	background-color: @pink;
+	height: 200px;
+	color: @dark-gray;
 }
-
-
-// --- VARIABLES
-@black: black;
-@font-large: 5rem;
-@font-medium: 2.5rem;
-@bottom: 3%;
-
 
 
 
@@ -99,7 +108,7 @@ html, body {
 			font-size: @font-medium;
 			text-decoration: none;
 			margin-right: 4.5%;
-			color: @black;
+			color: @dark-gray;
 		}
 	}
 }
@@ -112,6 +121,7 @@ html, body {
 	padding: 7% 4%;
 	border-radius: 5px;
 	margin-bottom: 5%;
+	text-align: center;
 
 	.intro-img{
 		padding-bottom: @bottom;
@@ -125,7 +135,7 @@ html, body {
 	h3{
 		font-size: @font-medium;
 		padding-bottom: @bottom;
-		border-bottom: 1px solid lightblue;
+		border-bottom: 1px solid @dark-gray;
 	}  
 
 	p{
@@ -139,7 +149,7 @@ html, body {
 			font-size: 1.8rem;
 			text-decoration: none;
 			padding: 0.9%;
-			background-color: gray;
+			background-color: @green;
 			color: white;
 			border: none;
 			border-radius: 5px;
@@ -150,26 +160,39 @@ html, body {
 
 
 
+// --- MIDDLE SECTION
+
 .middle-section{
-	font-size: @font-medium;
+	font-size: @font-small;
 	display: flex;
 	width: 100%;
-	text-align: center;
-
+	padding: 2%;
 	.info{
-
-		width:25%;
+		width:50%;
+		text-align: @align-start;
+		padding:@bottom;
 		h2{
-			font-size: @font-large;
+			font-size: @font-medium;
+			margin-bottom:5%;
 		}
 		
 	}
 
 	.stuff{
-
-		width:25%;
+		width:50%;
+		text-align: @align-start;
+		padding:2%;
 		h2{
-			font-size: @font-large;
+			font-size: @font-medium;
+			margin-bottom:5%;
+			text-align: @align-center;
 		}
+
+		table, th, td {
+			border: 1px solid black;
+			padding: 2%;
+			text-align: @align-center;
+		  }
+
 	}
 }

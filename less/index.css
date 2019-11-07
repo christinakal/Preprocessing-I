@@ -157,6 +157,9 @@ body {
   padding: 3%;
   font-size: 62.5%;
   font-family: 'Poppins', sans-serif;
+  background-color: #dfcdc3;
+  height: 200px;
+  color: #3c4245;
 }
 .page-wrapper {
   width: 85%;
@@ -175,56 +178,71 @@ body {
   font-size: 2.5rem;
   text-decoration: none;
   margin-right: 4.5%;
-  color: black;
+  color: #3c4245;
 }
 .intro {
   background-color: aliceblue;
   padding: 7% 4%;
   border-radius: 5px;
   margin-bottom: 5%;
+  text-align: center;
 }
 .intro .intro-img {
-  padding-bottom: 3%;
+  padding-bottom: 5%;
 }
 .intro h1 {
   font-size: 5rem;
-  padding-bottom: 3%;
+  padding-bottom: 5%;
 }
 .intro h3 {
   font-size: 2.5rem;
-  padding-bottom: 3%;
-  border-bottom: 1px solid lightblue;
+  padding-bottom: 5%;
+  border-bottom: 1px solid #3c4245;
 }
 .intro p {
   font-size: 2.5rem;
-  padding-top: 3%;
-  padding-bottom: 3%;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 .intro .intro-p-btn button {
   font-size: 1.8rem;
   text-decoration: none;
   padding: 0.9%;
-  background-color: gray;
+  background-color: #719192;
   color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
 }
 .middle-section {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   display: flex;
   width: 100%;
-  text-align: center;
+  padding: 2%;
 }
 .middle-section .info {
-  width: 25%;
+  width: 50%;
+  text-align: start;
+  padding: 5%;
 }
 .middle-section .info h2 {
-  font-size: 5rem;
+  font-size: 2.5rem;
+  margin-bottom: 5%;
 }
 .middle-section .stuff {
-  width: 25%;
+  width: 50%;
+  text-align: start;
+  padding: 2%;
 }
 .middle-section .stuff h2 {
-  font-size: 5rem;
+  font-size: 2.5rem;
+  margin-bottom: 5%;
+  text-align: center;
+}
+.middle-section .stuff table,
+.middle-section .stuff th,
+.middle-section .stuff td {
+  border: 1px solid black;
+  padding: 2%;
+  text-align: center;
 }
