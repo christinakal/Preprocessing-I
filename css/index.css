@@ -2,6 +2,27 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+@font-face {
+  font-family: 'McLaren';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('McLaren'), local('McLaren-Regular'), url(https://fonts.gstatic.com/s/mclaren/v7/2EbnL-ZuAXFqZFXIeYEV9w.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Poppins Regular'), local('Poppins-Regular'), url(https://fonts.gstatic.com/s/poppins/v9/pxiEyp8kv8JHgFVrJJfedw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v14/1Ptug8zYS_SKggPNyC0ISg.ttf) format('truetype');
+}
 html,
 body,
 div,
@@ -133,5 +154,118 @@ table {
 html,
 body {
   height: 100%;
-  color: red;
+  padding: 3%;
+  font-size: 62.5%;
+  font-family: 'Poppins', sans-serif;
+  background-color: #dfcdc3;
+  height: 200px;
+  color: #3c4245;
+}
+.page-wrapper {
+  width: 85%;
+  margin: 0 auto;
+}
+.nav-container {
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 4%;
+}
+.nav-container nav {
+  display: flex;
+}
+@media (max-width: 787px) {
+  .nav-container nav {
+    text-aligns: center;
+  }
+}
+.nav-container nav a {
+  font-size: 2.5rem;
+  text-decoration: none;
+  margin-right: 4.5%;
+  color: #3c4245;
+}
+.intro {
+  background-color: aliceblue;
+  padding: 7% 4%;
+  border-radius: 5px;
+  margin-bottom: 5%;
+  text-align: center;
+}
+.intro .intro-img {
+  padding-bottom: 5%;
+}
+.intro h1 {
+  font-size: 5rem;
+  padding-bottom: 5%;
+}
+.intro h3 {
+  font-size: 2.5rem;
+  padding-bottom: 5%;
+  border-bottom: 1px solid #3c4245;
+}
+.intro p {
+  font-size: 2.5rem;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+.intro .intro-p-btn button {
+  font-size: 1.8rem;
+  text-decoration: none;
+  padding: 0.9%;
+  background-color: #719192;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.intro .intro-p-btn p {
+  text-align: center;
+}
+.middle-section {
+  font-size: 1.5rem;
+  display: flex;
+  width: 100%;
+  padding: 2%;
+}
+.middle-section .info {
+  width: 50%;
+  text-align: start;
+  padding: 5%;
+}
+.middle-section .info h2 {
+  font-size: 2.5rem;
+  margin-bottom: 5%;
+}
+.middle-section .info p {
+  margin-top: 14%;
+}
+.middle-section .stuff {
+  width: 50%;
+  text-align: start;
+  padding: 2%;
+}
+.middle-section .stuff h2 {
+  font-size: 2.5rem;
+  margin-bottom: 5%;
+  text-align: center;
+  line-height: 57px;
+}
+.middle-section .stuff table,
+.middle-section .stuff th,
+.middle-section .stuff td {
+  border: 1px solid black;
+  padding: 2%;
+  text-align: center;
+}
+.middle-section .work-history {
+  font-size: 5rem;
+}
+.middle-section .work-history h1 {
+  font-size: 2.5rem;
+}
+.middle-section .work-history table,
+.middle-section .work-history th,
+.middle-section .work-history td {
+  border: 1px solid black;
+  border-collapse: collapse;
 }
