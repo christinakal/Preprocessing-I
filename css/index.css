@@ -175,7 +175,7 @@ body {
 }
 @media (max-width: 787px) {
   .nav-container nav {
-    text-aligns: center;
+    text-align: center;
   }
 }
 .nav-container nav a {
@@ -253,7 +253,7 @@ body {
 .middle-section .stuff table,
 .middle-section .stuff th,
 .middle-section .stuff td {
-  border: 1px solid black;
+  border: 1px solid #3c4245;
   padding: 2%;
   text-align: center;
 }
@@ -266,6 +266,6 @@ body {
 .middle-section .work-history table,
 .middle-section .work-history th,
 .middle-section .work-history td {
-  border: 1px solid black;
+  border: 1px solid #3c4245;
   border-collapse: collapse;
 }
