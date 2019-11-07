@@ -96,13 +96,18 @@ html, body {
 
 .nav-container{
 	display: flex;
-	justify-content: space-between;
 	flex-direction: row-reverse;
 	padding: 4%;
 
 
+
+
 	nav{
 		display: flex;
+
+		@media (max-width:787px){
+		text-aligns: center;
+		}
 		
 		a{
 			font-size: @font-medium;
@@ -155,6 +160,10 @@ html, body {
 			border-radius: 5px;
 			cursor: pointer;
 		}//button
+
+		p{
+		text-align: @align-center;
+		}
 	}//.intro-p-btn
 }//.intro
 
@@ -175,6 +184,10 @@ html, body {
 			font-size: @font-medium;
 			margin-bottom:5%;
 		}
+
+		p{
+			margin-top:14%;
+		}
 		
 	}
 
@@ -186,13 +199,30 @@ html, body {
 			font-size: @font-medium;
 			margin-bottom:5%;
 			text-align: @align-center;
+			line-height: 57px;
 		}
 
 		table, th, td {
 			border: 1px solid black;
 			padding: 2%;
 			text-align: @align-center;
-		  }
+		}
 
+	}//.stuff
+
+
+
+	// --- WORK HISTORY SECTION
+	.work-history{
+		font-size: @font-large;
+
+		h1{
+			font-size: @font-medium;
+		}
+
+		table, th, td {
+			border: 1px solid black;
+			border-collapse: collapse;
+		  }
 	}
 }

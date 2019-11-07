@@ -167,12 +167,16 @@ body {
 }
 .nav-container {
   display: flex;
-  justify-content: space-between;
   flex-direction: row-reverse;
   padding: 4%;
 }
 .nav-container nav {
   display: flex;
+}
+@media (max-width: 787px) {
+  .nav-container nav {
+    text-aligns: center;
+  }
 }
 .nav-container nav a {
   font-size: 2.5rem;
@@ -214,6 +218,9 @@ body {
   border-radius: 5px;
   cursor: pointer;
 }
+.intro .intro-p-btn p {
+  text-align: center;
+}
 .middle-section {
   font-size: 1.5rem;
   display: flex;
@@ -229,6 +236,9 @@ body {
   font-size: 2.5rem;
   margin-bottom: 5%;
 }
+.middle-section .info p {
+  margin-top: 14%;
+}
 .middle-section .stuff {
   width: 50%;
   text-align: start;
@@ -238,6 +248,7 @@ body {
   font-size: 2.5rem;
   margin-bottom: 5%;
   text-align: center;
+  line-height: 57px;
 }
 .middle-section .stuff table,
 .middle-section .stuff th,
@@ -245,4 +256,16 @@ body {
   border: 1px solid black;
   padding: 2%;
   text-align: center;
+}
+.middle-section .work-history {
+  font-size: 5rem;
+}
+.middle-section .work-history h1 {
+  font-size: 2.5rem;
+}
+.middle-section .work-history table,
+.middle-section .work-history th,
+.middle-section .work-history td {
+  border: 1px solid black;
+  border-collapse: collapse;
 }
