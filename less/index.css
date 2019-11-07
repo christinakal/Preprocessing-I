@@ -2,6 +2,27 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+@font-face {
+  font-family: 'McLaren';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('McLaren'), local('McLaren-Regular'), url(https://fonts.gstatic.com/s/mclaren/v7/2EbnL-ZuAXFqZFXIeYEV9w.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Poppins Regular'), local('Poppins-Regular'), url(https://fonts.gstatic.com/s/poppins/v9/pxiEyp8kv8JHgFVrJJfedw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v14/1Ptug8zYS_SKggPNyC0ISg.ttf) format('truetype');
+}
 html,
 body,
 div,
@@ -134,23 +155,67 @@ html,
 body {
   height: 100%;
   padding: 3%;
-  max-width: 800px;
+  font-size: 62.5%;
+  font-family: 'Poppins', sans-serif;
+}
+.page-wrapper {
+  width: 85%;
+  margin: 0 auto;
 }
 .nav-container {
   display: flex;
   justify-content: space-between;
   flex-direction: row-reverse;
-  padding: 5%;
+  padding: 4%;
 }
 .nav-container nav {
   display: flex;
 }
 .nav-container nav a {
+  font-size: 2.5rem;
   text-decoration: none;
   margin-right: 4.5%;
   color: black;
 }
 .intro {
-  background-color: lightgrey;
+  background-color: aliceblue;
   padding: 7% 4%;
+  border-radius: 5px;
+}
+.intro .intro-img {
+  padding-bottom: 3%;
+}
+.intro h1 {
+  font-size: 5rem;
+  padding-bottom: 3%;
+}
+.intro h3 {
+  font-size: 2.5rem;
+  padding-bottom: 3%;
+  border-bottom: 1px solid lightblue;
+}
+.intro p {
+  font-size: 2.5rem;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+.intro .intro-p-btn button {
+  font-size: 1.8rem;
+  text-decoration: none;
+  padding: 0.9%;
+  background-color: gray;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.middle-section {
+  font-size: 2.5rem;
+  display: flex;
+}
+.middle-section .info h2 {
+  font-size: 5rem;
+}
+.middle-section .stuff h2 {
+  font-size: 5rem;
 }
